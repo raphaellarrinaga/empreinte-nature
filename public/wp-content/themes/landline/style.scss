@@ -1,0 +1,289 @@
+@charset "utf-8";
+/*!
+Theme Name: Landline
+Theme URI: ​http://wordpress.org/themes/landline
+Author: Design 311
+Author URI: http://design311.com/
+Description: Landline is a WordPress theme featuring a fullscreen background image. You have the ability to give each page its own background image with the featured image setting. This theme supports 3 color schemes: Mango, Strawberry and Lime and custom font selection.
+Version: 1.5.3
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: light, white, orange, green, red, one-column, custom-background, custom-menu, featured-images, sticky-post, photoblogging
+
+Landline WordPress theme, Copyright (C) 2013 Design 311
+Landline WordPress theme is licensed under the GPL.
+*/
+
+//IMPORTS
+@import "scss/normalize";
+@import "scss/wp-core";
+@import "scss/mixins";
+@import "scss/default";
+
+// VARIABLES
+$white:#fff;
+$black:#444;
+$grey:#ddd;
+$lightgrey:#eee;
+$width:200px;
+$margin:25px;
+$wrapper:720px;
+$mango:#ffb424;
+$lime:#74cd00;
+$strawberry:#ff4747;
+$border:1px dashed lighten($black,30);
+
+body.landline{
+	background-color:$black;
+	background-image:url('img/default-background.jpg');
+	background-position:center center !important;
+	background-attachment:fixed !important;
+	background-size:cover;
+	font:16px/180% Arial, Helvetica, sans-serif;
+	color:$black;
+	overflow-wrap:break-word;
+	word-wrap:break-word;
+
+	.wf{
+		font-family:'Arvo', Helvetica, Arial, sans-serif;
+		letter-spacing:-1px;
+	}
+
+	::selection{
+		background:rgba($mango,0.4);
+		color:$black;
+	}
+
+	::-moz-selection{
+		background:rgba($mango,0.4);
+		color:$black;
+	}
+
+	a{
+		color:$mango;
+		&:hover, &:active, &:focus{
+			color:darken($mango,20);
+		}
+	}
+
+	h1, h2, h3, h4, h5, h6{
+		line-height:140%;
+		@extend .wf;
+	}
+
+	button, input[type="submit"]{
+		background:$mango;
+		border:1px solid darken($mango,10);
+		color:$white;
+		padding:5px $margin;
+		border-radius:10px;
+		&:hover, &:active, &:focus{
+			background:darken($mango,5);
+		}
+	}
+
+	.nolink{
+		@include nolink($black)
+	}
+
+	.wrapper{
+		background:$white;
+		width:$wrapper;
+		margin:$margin*3 0 0;
+		padding:$margin*2;
+		box-shadow:0 0 10px lighten($black,20);
+	}
+
+	.header{
+		margin-bottom:$margin;
+		.title{
+			font-size:3em;
+			margin:0;
+			@extend .wf;
+			font-weight:bold;
+		}
+
+		.description{
+			font-style:italic;
+			margin-top:0;
+			color:lighten($black,30);
+		}
+
+		.main-menu-container{
+			border:$border;
+			border-left:none;
+			border-right:none;
+			padding:$margin/3 0;
+			margin:$margin 0;
+			ul{
+				@include minireset;
+			}
+			li{
+				display:inline-block;
+				margin-right:$margin/3;
+				&:last-child{
+					margin-right:0;
+				}
+			}
+		}
+	}
+
+	.body{
+		margin:$margin*2 0;
+	}
+
+	.type-page{
+		border-bottom:$border;
+		margin-bottom:$margin;
+		padding-bottom:$margin;
+		img{
+			max-width:100%;
+			height:auto;
+		}
+		.wp-caption{
+			img{
+				max-width:98.5%;
+			}
+		}
+	}
+
+	.post{
+		@extend .type-page;
+	}
+
+	.post-meta-date{
+		color:lighten($black,30);
+		font-style:italic;
+	}
+
+	.sticky{
+		background:$lightgrey;
+		border:1px solid $grey;
+		padding:$margin;
+	}
+
+	.commentlist{
+		list-style:none;
+		padding:0;
+		margin:0;
+		.children{
+			list-style:none;
+			padding-left:31px;
+			border-left:1px solid $lightgrey;
+		}
+	}
+
+	.comment{
+		padding-top:$margin;
+		margin-top:$margin;
+		border-top:1px solid $lightgrey;
+		&:first-child{
+			border:none;
+			padding:0;
+		}
+		.avatar{
+			vertical-align:middle;
+		}
+
+		.comment-author{
+			display:inline-block;
+		}
+		.comment-meta{
+			display:inline-block;
+			height:32px;
+			float:right;
+			a:first-child{
+				@extend .nolink;
+				color:lighten($black,30);
+				font-style:italic;
+			}
+		}
+	}
+
+	.bypostauthor{
+		@extend .sticky;
+	}
+
+	.comment-respond{
+		margin-top:$margin;
+		label{
+			display:block;
+			font-weight:bold;
+		}
+	}
+
+	.footer{
+		width:$wrapper;
+		text-align:right;
+		color:$white;
+		@include linkcolor($white);
+		margin-bottom:$margin*6;
+		text-shadow:0 0 3px lighten($black,20);
+	}
+
+	.gallery-caption{
+		font-size:90%;
+	}
+
+	tr{
+		border-bottom:1px solid $grey;
+		td, th{
+			padding:10px 5px;
+		}
+	}
+
+	dd{
+		color:lighten($black,10);
+		font-style:italic;
+	}
+}
+
+body.strawberry{
+	::selection{
+		background:rgba($strawberry,0.4);
+	}
+
+	::-moz-selection{
+		background:rgba($strawberry,0.4);
+	}
+
+	a{
+		color:$strawberry;
+		&:hover, &:active, &:focus{
+			color:darken($strawberry,20);
+		}
+	}
+
+	button, input[type="submit"]{
+		background:$strawberry;
+		border:1px solid darken($strawberry,10);
+		&:hover, &:active, &:focus{
+			background:darken($strawberry,5);
+		}
+	}
+}
+
+body.lime{
+	::selection{
+		background:rgba($lime,0.4);
+	}
+
+	::-moz-selection{
+		background:rgba($lime,0.4);
+	}
+
+	a{
+		color:$lime;
+		&:hover, &:active, &:focus{
+			color:darken($lime,20);
+		}
+	}
+
+	button, input[type="submit"]{
+		background:$lime;
+		border:1px solid darken($lime,10);
+		&:hover, &:active, &:focus{
+			background:darken($lime,5);
+		}
+	}
+}

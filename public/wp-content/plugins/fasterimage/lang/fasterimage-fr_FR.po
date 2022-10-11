@@ -1,0 +1,830 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: fasterImage\n"
+"POT-Creation-Date: 2021-07-28 17:12+0200\n"
+"PO-Revision-Date: 2021-07-28 17:13+0200\n"
+"Last-Translator: \n"
+"Language-Team: fasterImage\n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.0\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-KeywordsList: __;_n:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: inc/admin/notices.php:13
+msgid "Thank you for installing fasterImage !"
+msgstr "Merci d'avoir installé fasterImage !"
+
+#: inc/admin/notices.php:15
+msgid "In order to enable optimization, please setup settings in menu "
+msgstr ""
+"Pour activer les optimisations, veuillez configurer les options dans la page "
+
+#: inc/admin/notices.php:15 inc/admin/notices.php:34
+msgid "Settings > fasterImage"
+msgstr "Réglages > fasterImage"
+
+#: inc/admin/notices.php:29
+msgid "fasterImage : API key error"
+msgstr "fasterImage : Erreur de clé API"
+
+#: inc/admin/notices.php:31
+msgid "The API key is not valid anymore, images won't be optimized !"
+msgstr ""
+"La clé API que vous avez renseigné n'est plus valide, les images ne seront "
+"donc pas optimisées !"
+
+#: inc/admin/notices.php:33
+msgid "Please check your key on "
+msgstr "Veuillez corriger le problème dans la page "
+
+#: inc/admin/pages.php:19
+msgid "fasterImage"
+msgstr "fasterImage"
+
+#: inc/admin/pages.php:28
+msgid "Dashboard"
+msgstr "Tableau de bord"
+
+#: inc/admin/pages.php:32 inc/admin/pages.php:209
+#: lib/afp/factory/AdminPageFramework_Factory/model/AdminPageFramework_Message.php:77
+msgid "Settings"
+msgstr "Paramètres"
+
+#: inc/admin/pages.php:69
+msgid ""
+"An error occured during the API call. Please try again or contact support."
+msgstr ""
+"Une erreur de connexion s'est produite lors de l'appel à l'API. Veuillez "
+"recommencer ou contacter le support."
+
+#: inc/admin/pages.php:77 inc/admin/pages.php:97
+msgid ""
+"This API key seems invalid. Please check your input or contact support if "
+"the problem persists."
+msgstr ""
+"Cette clé API ne semble pas valide. Veuillez vérifier votre saisie ou "
+"contacter le support si le problème persiste."
+
+#: inc/admin/pages.php:122
+msgid "An error occured, please check your input and try again."
+msgstr ""
+"Une erreur s'est produite, veuillez vérifier votre saisie et recommencer."
+
+#: inc/admin/pages.php:143
+msgid "Optimize your images & Speed up your website !"
+msgstr "Optimisez vos images & Accélérez votre site Web !"
+
+#: inc/admin/pages.php:144
+msgid "WordPress plugin"
+msgstr "Plugin WordPress"
+
+#: inc/admin/pages.php:144
+msgid "version"
+msgstr "version"
+
+#: inc/admin/pages.php:146
+msgid "Follow"
+msgstr "Suivre"
+
+#: inc/admin/pages.php:150
+msgid "Help / Support"
+msgstr "Aide / Support"
+
+#: inc/admin/pages.php:168
+msgid "Loading dashboard"
+msgstr "Chargement de l'interface en cours"
+
+#: inc/admin/pages.php:172
+msgid "Thanks for using the fasterImage plugin !"
+msgstr "Merci d'avoir téléchargé et installé le plugin fasterImage !"
+
+#: inc/admin/pages.php:175
+msgid "You don't have an account yet ?"
+msgstr "Vous n'avez pas encore de compte ?"
+
+#: inc/admin/pages.php:175
+msgid "Create an account"
+msgstr "Créez un compte"
+
+#: inc/admin/pages.php:176
+msgid "to optimize your images and use"
+msgstr "pour optimiser vos images et utilisez"
+
+#: inc/admin/pages.php:176
+msgid "as domain name during setup"
+msgstr "comme nom de domaine lors de la configuration"
+
+#: inc/admin/pages.php:177
+msgid "You already have an account,"
+msgstr "Vous avez déjà un compte,"
+
+#: inc/admin/pages.php:177
+msgid "enter the API key provided for your domain name :"
+msgstr "indiquez la clé API fournie pour votre nom de domaine :"
+
+#: inc/admin/pages.php:192
+msgid "Invalid API key"
+msgstr "Clé API invalide"
+
+#: inc/admin/pages.php:192
+msgid "It seems that your API key has been updated or is not valid anymore."
+msgstr ""
+"Il semblerait que votre clé API ait été mise à jour ou n'est plus valide."
+
+#: inc/admin/pages.php:193
+msgid "Please check your API key in the"
+msgstr "Veuillez vérifier la clé API dans les"
+
+#: inc/admin/pages.php:193
+msgid "settings of fasterImage"
+msgstr "paramètres de fasterImage"
+
+#: inc/admin/pages.php:209
+msgid "Optimization"
+msgstr "Optimisation"
+
+#: inc/admin/pages.php:209
+msgid "enabled"
+msgstr "activée"
+
+#: inc/admin/pages.php:209
+msgid "disabled"
+msgstr "désactivée"
+
+#: inc/admin/pages.php:211
+msgid "Optimized images"
+msgstr "Images optimisées"
+
+#: inc/admin/pages.php:211
+msgid "More stats"
+msgstr "Plus de stats"
+
+#: inc/admin/pages.php:224
+#, php-format
+msgid "%s day"
+msgid_plural "%s days"
+msgstr[0] "%s jour"
+msgstr[1] "%s jours"
+
+#: inc/admin/pages.php:225
+#, php-format
+msgid "%s hour"
+msgid_plural "%s hours"
+msgstr[0] "%s heure"
+msgstr[1] "%s heures"
+
+#: inc/admin/pages.php:226
+#, php-format
+msgid "%s minute"
+msgid_plural "%s minutes"
+msgstr[0] "%s minute"
+msgstr[1] "%s minutes"
+
+#: inc/admin/pages.php:226
+msgid "and"
+msgstr "et"
+
+#: inc/admin/pages.php:227
+#, php-format
+msgid "%s second"
+msgid_plural "%s seconds"
+msgstr[0] "%s seconde"
+msgstr[1] "%s secondes"
+
+#: inc/admin/pages.php:228 inc/admin/pages.php:232 inc/admin/pages.php:238
+#: inc/admin/pages.php:243
+msgid "That's"
+msgstr "C'est"
+
+#: inc/admin/pages.php:228
+msgid "of downloading in 3G !"
+msgstr "de téléchargement en 3G !"
+
+#: inc/admin/pages.php:232
+#, php-format
+msgid "%s 3,5\" disk"
+msgid_plural "%s 3,5\" disk"
+msgstr[0] "%s disquette 3,5\""
+msgstr[1] "%s disquettes 3,5\""
+
+#: inc/admin/pages.php:238
+#, php-format
+msgid "%s%% of french Wikipedia volume"
+msgstr "%s%% du volume de Wikipedia en Français"
+
+#: inc/admin/pages.php:243
+#, php-format
+msgid "%s times the french Wikipedia volume"
+msgstr "%s fois Wikipedia en Français"
+
+#: inc/admin/pages.php:252
+msgid "Saved bandwith"
+msgstr "Bande passante économisée"
+
+#: inc/admin/pages.php:254
+msgid "Used quota"
+msgstr "Quota utilisé"
+
+#: inc/admin/pages.php:254
+msgid "Increase this limit"
+msgstr "Augmenter cette limite"
+
+#: inc/admin/pages.php:260
+msgid ""
+"Images of your website handled by WordPress are automatically optimized."
+msgstr ""
+"Les images de votre site gérées par WordPress sont automatiquement "
+"optimisées."
+
+#: inc/admin/pages.php:261
+msgid ""
+"If you would like to manually add an image (in your theme for example) you "
+"can use this syntax :"
+msgstr ""
+"Si vous souhaitez ajouter une image manuellement (dans votre thème par "
+"exemple) vous pouvez utiliser cette syntaxe :"
+
+#: inc/admin/pages.php:262
+msgid "directory"
+msgstr "dossier"
+
+#: inc/admin/pages.php:262
+msgid "My optimized image"
+msgstr "Mon image optimisée"
+
+#: inc/admin/pages.php:263
+msgid "or in a CSS :"
+msgstr "ou en CSS :"
+
+#: inc/admin/pages.php:265
+msgid "Think about changing"
+msgstr "Pensez à changer"
+
+#: inc/admin/pages.php:265
+msgid "in"
+msgstr "en"
+
+#: inc/admin/pages.php:265
+msgid "if you are using HTTPS"
+msgstr "si vous êtes en mode sécurisé"
+
+#: inc/admin/pages.php:285
+msgid "You can find your key on :"
+msgstr "Votre clé se trouve dans :"
+
+#: inc/admin/pages.php:285 inc/admin/pages.php:343
+msgid "My account"
+msgstr "Mon Compte"
+
+#: inc/admin/pages.php:285 inc/admin/pages.php:343
+msgid "Domain names"
+msgstr "Noms de domaine"
+
+#: inc/admin/pages.php:336
+msgid "Enable the plugin"
+msgstr "Activer le plugin"
+
+#: inc/admin/pages.php:337
+msgid "Check this box to enable image optimization"
+msgstr "Cochez cette case pour activer l'optimisation des images"
+
+#: inc/admin/pages.php:342
+msgid "API key"
+msgstr "Clé API"
+
+#: inc/admin/pages.php:343
+msgid "Available in :"
+msgstr "Disponible dans :"
+
+#: inc/admin/pages.php:348
+msgid "Save"
+msgstr "Enregistrer"
+
+#: lib/afp/admin-page-framework.php:47
+#, php-format
+msgid "The method is called too early. Perform <code>%2$s</code> earlier."
+msgstr "The method is called too early. Perform <code>%2$s</code> earlier."
+
+#: lib/afp/factory/AdminPageFramework/AdminPageFramework_Form_Controller.php:63
+#, php-format
+msgid "The method is deprecated: %1$s. Use %2$s instead."
+msgstr "The method is deprecated: %1$s. Use %2$s instead."
+
+#: lib/afp/factory/AdminPageFramework/AdminPageFramework_Form_Model_Validation.php:37
+#, php-format
+msgid "The hook <code>%1$s</code>is deprecated. Use <code>%2$s</code> instead."
+msgstr ""
+"The hook <code>%1$s</code>is deprecated. Use <code>%2$s</code> instead."
+
+#: lib/afp/factory/AdminPageFramework_Factory/AdminPageFramework_Factory_Router.php:162
+#, php-format
+msgid "The method is not defined: %1$s"
+msgstr "The method is not defined: %1$s"
+
+#: lib/afp/factory/AdminPageFramework_Factory/model/AdminPageFramework_Message.php:44
+msgid "The options have been updated."
+msgstr "The options have been updated."
+
+#: lib/afp/factory/AdminPageFramework_Factory/model/AdminPageFramework_Message.php:45
+msgid "The options have been cleared."
+msgstr "The options have been cleared."
+
+#: lib/afp/factory/AdminPageFramework_Factory/model/AdminPageFramework_Message.php:46
+msgid "Export"
+msgstr "Export"
+
+#: lib/afp/factory/AdminPageFramework_Factory/model/AdminPageFramework_Message.php:47
+msgid "Export Options"
+msgstr "Export Options"
+
+#: lib/afp/factory/AdminPageFramework_Factory/model/AdminPageFramework_Message.php:48
+msgid "Import"
+msgstr "Import"
+
+#: lib/afp/factory/AdminPageFramework_Factory/model/AdminPageFramework_Message.php:49
+msgid "Import Options"
+msgstr "Import Options"
+
+#: lib/afp/factory/AdminPageFramework_Factory/model/AdminPageFramework_Message.php:50
+msgid "Submit"
+msgstr "Submit"
+
+#: lib/afp/factory/AdminPageFramework_Factory/model/AdminPageFramework_Message.php:51
+msgid "An error occurred while uploading the import file."
+msgstr "An error occurred while uploading the import file."
+
+#: lib/afp/factory/AdminPageFramework_Factory/model/AdminPageFramework_Message.php:52
+#, php-format
+msgid "The uploaded file type is not supported: %1$s"
+msgstr "The uploaded file type is not supported: %1$s"
+
+#: lib/afp/factory/AdminPageFramework_Factory/model/AdminPageFramework_Message.php:53
+msgid "Could not load the importing data."
+msgstr "Could not load the importing data."
+
+#: lib/afp/factory/AdminPageFramework_Factory/model/AdminPageFramework_Message.php:54
+msgid "The uploaded file has been imported."
+msgstr "The uploaded file has been imported."
+
+#: lib/afp/factory/AdminPageFramework_Factory/model/AdminPageFramework_Message.php:55
+msgid "No data could be imported."
+msgstr "No data could be imported."
+
+#: lib/afp/factory/AdminPageFramework_Factory/model/AdminPageFramework_Message.php:56
+msgid "Upload Image"
+msgstr "Upload Image"
+
+#: lib/afp/factory/AdminPageFramework_Factory/model/AdminPageFramework_Message.php:57
+msgid "Use This Image"
+msgstr "Use This Image"
+
+#: lib/afp/factory/AdminPageFramework_Factory/model/AdminPageFramework_Message.php:58
+msgid "Insert from URL"
+msgstr "Insert from URL"
+
+#: lib/afp/factory/AdminPageFramework_Factory/model/AdminPageFramework_Message.php:59
+msgid "Are you sure you want to reset the options?"
+msgstr "Are you sure you want to reset the options?"
+
+#: lib/afp/factory/AdminPageFramework_Factory/model/AdminPageFramework_Message.php:60
+msgid "Please confirm your action."
+msgstr "Please confirm your action."
+
+#: lib/afp/factory/AdminPageFramework_Factory/model/AdminPageFramework_Message.php:61
+msgid "The specified options have been deleted."
+msgstr "The specified options have been deleted."
+
+#: lib/afp/factory/AdminPageFramework_Factory/model/AdminPageFramework_Message.php:62
+msgid "A problem occurred while processing the form data. Please try again."
+msgstr "A problem occurred while processing the form data. Please try again."
+
+#: lib/afp/factory/AdminPageFramework_Factory/model/AdminPageFramework_Message.php:63
+#, php-format
+msgid ""
+"Not all form fields could not be sent. Please check your server settings of "
+"PHP <code>max_input_vars</code> and consult the server administrator to "
+"increase the value. <code>max input vars</code>: %1$s. <code>$_POST</code> "
+"count: %2$s"
+msgstr ""
+"Not all form fields could not be sent. Please check your server settings of "
+"PHP <code>max_input_vars</code> and consult the server administrator to "
+"increase the value. <code>max input vars</code>: %1$s. <code>$_POST</code> "
+"count: %2$s"
+
+#: lib/afp/factory/AdminPageFramework_Factory/model/AdminPageFramework_Message.php:64
+msgid "Is it okay to send the email?"
+msgstr "Is it okay to send the email?"
+
+#: lib/afp/factory/AdminPageFramework_Factory/model/AdminPageFramework_Message.php:65
+msgid "The email has been sent."
+msgstr "The email has been sent."
+
+#: lib/afp/factory/AdminPageFramework_Factory/model/AdminPageFramework_Message.php:66
+msgid "The email has been scheduled."
+msgstr "The email has been scheduled."
+
+#: lib/afp/factory/AdminPageFramework_Factory/model/AdminPageFramework_Message.php:67
+msgid "There was a problem sending the email"
+msgstr "There was a problem sending the email"
+
+#: lib/afp/factory/AdminPageFramework_Factory/model/AdminPageFramework_Message.php:68
+msgid "Title"
+msgstr "Title"
+
+#: lib/afp/factory/AdminPageFramework_Factory/model/AdminPageFramework_Message.php:69
+msgid "Author"
+msgstr "Author"
+
+#: lib/afp/factory/AdminPageFramework_Factory/model/AdminPageFramework_Message.php:70
+msgid "Categories"
+msgstr "Categories"
+
+#: lib/afp/factory/AdminPageFramework_Factory/model/AdminPageFramework_Message.php:71
+msgid "Tags"
+msgstr "Tags"
+
+#: lib/afp/factory/AdminPageFramework_Factory/model/AdminPageFramework_Message.php:72
+msgid "Comments"
+msgstr "Comments"
+
+#: lib/afp/factory/AdminPageFramework_Factory/model/AdminPageFramework_Message.php:73
+msgid "Date"
+msgstr "Date"
+
+#: lib/afp/factory/AdminPageFramework_Factory/model/AdminPageFramework_Message.php:74
+msgid "Show All"
+msgstr "Show All"
+
+#: lib/afp/factory/AdminPageFramework_Factory/model/AdminPageFramework_Message.php:75
+msgid "Show All Authors"
+msgstr "Show All Authors"
+
+#: lib/afp/factory/AdminPageFramework_Factory/model/AdminPageFramework_Message.php:76
+msgid "Powered by"
+msgstr "Powered by"
+
+#: lib/afp/factory/AdminPageFramework_Factory/model/AdminPageFramework_Message.php:78
+msgid "Manage"
+msgstr "Manage"
+
+#: lib/afp/factory/AdminPageFramework_Factory/model/AdminPageFramework_Message.php:79
+msgid "Select Image"
+msgstr "Select Image"
+
+#: lib/afp/factory/AdminPageFramework_Factory/model/AdminPageFramework_Message.php:80
+msgid "Upload File"
+msgstr "Upload File"
+
+#: lib/afp/factory/AdminPageFramework_Factory/model/AdminPageFramework_Message.php:81
+msgid "Use This File"
+msgstr "Use This File"
+
+#: lib/afp/factory/AdminPageFramework_Factory/model/AdminPageFramework_Message.php:82
+msgid "Select File"
+msgstr "Select File"
+
+#: lib/afp/factory/AdminPageFramework_Factory/model/AdminPageFramework_Message.php:83
+msgid "Remove Value"
+msgstr "Remove Value"
+
+#: lib/afp/factory/AdminPageFramework_Factory/model/AdminPageFramework_Message.php:84
+msgid "Select All"
+msgstr "Select All"
+
+#: lib/afp/factory/AdminPageFramework_Factory/model/AdminPageFramework_Message.php:85
+msgid "Select None"
+msgstr "Select None"
+
+#: lib/afp/factory/AdminPageFramework_Factory/model/AdminPageFramework_Message.php:86
+msgid "No term found."
+msgstr "No term found."
+
+#: lib/afp/factory/AdminPageFramework_Factory/model/AdminPageFramework_Message.php:87
+msgid "Select"
+msgstr "Select"
+
+#: lib/afp/factory/AdminPageFramework_Factory/model/AdminPageFramework_Message.php:88
+msgid "Insert"
+msgstr "Insert"
+
+#: lib/afp/factory/AdminPageFramework_Factory/model/AdminPageFramework_Message.php:89
+msgid "Use This"
+msgstr "Use This"
+
+#: lib/afp/factory/AdminPageFramework_Factory/model/AdminPageFramework_Message.php:90
+msgid "Return to Library"
+msgstr "Return to Library"
+
+#: lib/afp/factory/AdminPageFramework_Factory/model/AdminPageFramework_Message.php:91
+#, php-format
+msgid "%1$s queries in %2$s seconds."
+msgstr "%1$s queries in %2$s seconds."
+
+#: lib/afp/factory/AdminPageFramework_Factory/model/AdminPageFramework_Message.php:92
+#, php-format
+msgid "%1$s out of %2$s MB (%3$s) memory used."
+msgstr "%1$s out of %2$s MB (%3$s) memory used."
+
+#: lib/afp/factory/AdminPageFramework_Factory/model/AdminPageFramework_Message.php:93
+#, php-format
+msgid "Peak memory usage %1$s MB."
+msgstr "Peak memory usage %1$s MB."
+
+#: lib/afp/factory/AdminPageFramework_Factory/model/AdminPageFramework_Message.php:94
+#, php-format
+msgid "Initial memory usage  %1$s MB."
+msgstr "Initial memory usage  %1$s MB."
+
+#: lib/afp/factory/AdminPageFramework_Factory/model/AdminPageFramework_Message.php:95
+msgid "The allowed maximum number of fields is {0}."
+msgstr "The allowed maximum number of fields is {0}."
+
+#: lib/afp/factory/AdminPageFramework_Factory/model/AdminPageFramework_Message.php:96
+msgid "The allowed minimum number of fields is {0}."
+msgstr "The allowed minimum number of fields is {0}."
+
+#: lib/afp/factory/AdminPageFramework_Factory/model/AdminPageFramework_Message.php:97
+msgid "Add"
+msgstr "Add"
+
+#: lib/afp/factory/AdminPageFramework_Factory/model/AdminPageFramework_Message.php:98
+msgid "Remove"
+msgstr "Remove"
+
+#: lib/afp/factory/AdminPageFramework_Factory/model/AdminPageFramework_Message.php:99
+msgid "The allowed maximum number of sections is {0}"
+msgstr "The allowed maximum number of sections is {0}"
+
+#: lib/afp/factory/AdminPageFramework_Factory/model/AdminPageFramework_Message.php:100
+msgid "The allowed minimum number of sections is {0}"
+msgstr "The allowed minimum number of sections is {0}"
+
+#: lib/afp/factory/AdminPageFramework_Factory/model/AdminPageFramework_Message.php:101
+msgid "Add Section"
+msgstr "Add Section"
+
+#: lib/afp/factory/AdminPageFramework_Factory/model/AdminPageFramework_Message.php:102
+msgid "Remove Section"
+msgstr "Remove Section"
+
+#: lib/afp/factory/AdminPageFramework_Factory/model/AdminPageFramework_Message.php:103
+msgid "Toggle All"
+msgstr "Toggle All"
+
+#: lib/afp/factory/AdminPageFramework_Factory/model/AdminPageFramework_Message.php:104
+msgid "Toggle all collapsible sections"
+msgstr "Toggle all collapsible sections"
+
+#: lib/afp/factory/AdminPageFramework_Factory/model/AdminPageFramework_Message.php:105
+msgid "Reset"
+msgstr "Reset"
+
+#: lib/afp/factory/AdminPageFramework_Factory/model/AdminPageFramework_Message.php:106
+msgid "Yes"
+msgstr "Yes"
+
+#: lib/afp/factory/AdminPageFramework_Factory/model/AdminPageFramework_Message.php:107
+msgid "No"
+msgstr "No"
+
+#: lib/afp/factory/AdminPageFramework_Factory/model/AdminPageFramework_Message.php:108
+msgid "On"
+msgstr "On"
+
+#: lib/afp/factory/AdminPageFramework_Factory/model/AdminPageFramework_Message.php:109
+msgid "Off"
+msgstr "Off"
+
+#: lib/afp/factory/AdminPageFramework_Factory/model/AdminPageFramework_Message.php:110
+msgid "Enabled"
+msgstr "Activé"
+
+#: lib/afp/factory/AdminPageFramework_Factory/model/AdminPageFramework_Message.php:111
+msgid "Disabled"
+msgstr "Désactivé"
+
+#: lib/afp/factory/AdminPageFramework_Factory/model/AdminPageFramework_Message.php:112
+msgid "Supported"
+msgstr "Supported"
+
+#: lib/afp/factory/AdminPageFramework_Factory/model/AdminPageFramework_Message.php:113
+msgid "Not Supported"
+msgstr "Not Supported"
+
+#: lib/afp/factory/AdminPageFramework_Factory/model/AdminPageFramework_Message.php:114
+msgid "Functional"
+msgstr "Functional"
+
+#: lib/afp/factory/AdminPageFramework_Factory/model/AdminPageFramework_Message.php:115
+msgid "Not Functional"
+msgstr "Not Functional"
+
+#: lib/afp/factory/AdminPageFramework_Factory/model/AdminPageFramework_Message.php:116
+msgid "Too Long"
+msgstr "Too Long"
+
+#: lib/afp/factory/AdminPageFramework_Factory/model/AdminPageFramework_Message.php:117
+msgid "Acceptable"
+msgstr "Acceptable"
+
+#: lib/afp/factory/AdminPageFramework_Factory/model/AdminPageFramework_Message.php:118
+msgid "No log found."
+msgstr "No log found."
+
+#: lib/afp/factory/AdminPageFramework_Factory/view/AdminPageFramework_FieldType/AdminPageFramework_FieldType_system.php:109
+msgid "No browser information found."
+msgstr "No browser information found."
+
+#: lib/afp/factory/AdminPageFramework_Factory/view/AdminPageFramework_FieldType/AdminPageFramework_FieldType_system.php:136
+#: lib/afp/factory/AdminPageFramework_Factory/view/AdminPageFramework_FieldType/AdminPageFramework_FieldType_system.php:212
+msgid "Version"
+msgstr "Version"
+
+#: lib/afp/factory/AdminPageFramework_Factory/view/AdminPageFramework_FieldType/AdminPageFramework_FieldType_system.php:136
+msgid "Language"
+msgstr "Language"
+
+#: lib/afp/factory/AdminPageFramework_Factory/view/AdminPageFramework_FieldType/AdminPageFramework_FieldType_system.php:136
+#: lib/afp/factory/AdminPageFramework_Factory/view/AdminPageFramework_FieldType/AdminPageFramework_FieldType_system.php:212
+msgid "Memory Limit"
+msgstr "Memory Limit"
+
+#: lib/afp/factory/AdminPageFramework_Factory/view/AdminPageFramework_FieldType/AdminPageFramework_FieldType_system.php:136
+msgid "Multi-site"
+msgstr "Multi-site"
+
+#: lib/afp/factory/AdminPageFramework_Factory/view/AdminPageFramework_FieldType/AdminPageFramework_FieldType_system.php:136
+msgid "Permalink Structure"
+msgstr "Permalink Structure"
+
+#: lib/afp/factory/AdminPageFramework_Factory/view/AdminPageFramework_FieldType/AdminPageFramework_FieldType_system.php:136
+msgid "Active Theme"
+msgstr "Active Theme"
+
+#: lib/afp/factory/AdminPageFramework_Factory/view/AdminPageFramework_FieldType/AdminPageFramework_FieldType_system.php:136
+msgid "Registered Post Statuses"
+msgstr "Registered Post Statuses"
+
+#: lib/afp/factory/AdminPageFramework_Factory/view/AdminPageFramework_FieldType/AdminPageFramework_FieldType_system.php:136
+msgid "Table Prefix"
+msgstr "Table Prefix"
+
+#: lib/afp/factory/AdminPageFramework_Factory/view/AdminPageFramework_FieldType/AdminPageFramework_FieldType_system.php:136
+msgid "Table Prefix Length"
+msgstr "Table Prefix Length"
+
+#: lib/afp/factory/AdminPageFramework_Factory/view/AdminPageFramework_FieldType/AdminPageFramework_FieldType_system.php:136
+msgid "Table Prefix Status"
+msgstr "Table Prefix Status"
+
+#: lib/afp/factory/AdminPageFramework_Factory/view/AdminPageFramework_FieldType/AdminPageFramework_FieldType_system.php:136
+msgid "Multibite String Extension"
+msgstr "Multibite String Extension"
+
+#: lib/afp/factory/AdminPageFramework_Factory/view/AdminPageFramework_FieldType/AdminPageFramework_FieldType_system.php:136
+msgid "WP_CONTENT_DIR Writeable"
+msgstr "WP_CONTENT_DIR Writeable"
+
+#: lib/afp/factory/AdminPageFramework_Factory/view/AdminPageFramework_FieldType/AdminPageFramework_FieldType_system.php:136
+msgid "Active Plugins"
+msgstr "Active Plugins"
+
+#: lib/afp/factory/AdminPageFramework_Factory/view/AdminPageFramework_FieldType/AdminPageFramework_FieldType_system.php:136
+msgid "Network Active Plugins"
+msgstr "Network Active Plugins"
+
+#: lib/afp/factory/AdminPageFramework_Factory/view/AdminPageFramework_FieldType/AdminPageFramework_FieldType_system.php:136
+#: lib/afp/factory/AdminPageFramework_Factory/view/AdminPageFramework_FieldType/AdminPageFramework_FieldType_system.php:212
+msgid "Constants"
+msgstr "Constants"
+
+#: lib/afp/factory/AdminPageFramework_Factory/view/AdminPageFramework_FieldType/AdminPageFramework_FieldType_system.php:212
+msgid "Safe Mode"
+msgstr "Safe Mode"
+
+#: lib/afp/factory/AdminPageFramework_Factory/view/AdminPageFramework_FieldType/AdminPageFramework_FieldType_system.php:212
+msgid "Upload Max Size"
+msgstr "Upload Max Size"
+
+#: lib/afp/factory/AdminPageFramework_Factory/view/AdminPageFramework_FieldType/AdminPageFramework_FieldType_system.php:212
+msgid "Post Max Size"
+msgstr "Post Max Size"
+
+#: lib/afp/factory/AdminPageFramework_Factory/view/AdminPageFramework_FieldType/AdminPageFramework_FieldType_system.php:212
+msgid "Upload Max File Size"
+msgstr "Upload Max File Size"
+
+#: lib/afp/factory/AdminPageFramework_Factory/view/AdminPageFramework_FieldType/AdminPageFramework_FieldType_system.php:212
+msgid "Max Execution Time"
+msgstr "Max Execution Time"
+
+#: lib/afp/factory/AdminPageFramework_Factory/view/AdminPageFramework_FieldType/AdminPageFramework_FieldType_system.php:212
+msgid "Max Input Vars"
+msgstr "Max Input Vars"
+
+#: lib/afp/factory/AdminPageFramework_Factory/view/AdminPageFramework_FieldType/AdminPageFramework_FieldType_system.php:212
+msgid "Argument Separator"
+msgstr "Argument Separator"
+
+#: lib/afp/factory/AdminPageFramework_Factory/view/AdminPageFramework_FieldType/AdminPageFramework_FieldType_system.php:212
+msgid "Allow URL File Open"
+msgstr "Allow URL File Open"
+
+#: lib/afp/factory/AdminPageFramework_Factory/view/AdminPageFramework_FieldType/AdminPageFramework_FieldType_system.php:212
+msgid "Display Errors"
+msgstr "Display Errors"
+
+#: lib/afp/factory/AdminPageFramework_Factory/view/AdminPageFramework_FieldType/AdminPageFramework_FieldType_system.php:212
+msgid "Log Errors"
+msgstr "Log Errors"
+
+#: lib/afp/factory/AdminPageFramework_Factory/view/AdminPageFramework_FieldType/AdminPageFramework_FieldType_system.php:212
+msgid "Error log location"
+msgstr "Error log location"
+
+#: lib/afp/factory/AdminPageFramework_Factory/view/AdminPageFramework_FieldType/AdminPageFramework_FieldType_system.php:212
+msgid "Error Reporting Level"
+msgstr "Error Reporting Level"
+
+#: lib/afp/factory/AdminPageFramework_Factory/view/AdminPageFramework_FieldType/AdminPageFramework_FieldType_system.php:212
+msgid "FSOCKOPEN"
+msgstr "FSOCKOPEN"
+
+#: lib/afp/factory/AdminPageFramework_Factory/view/AdminPageFramework_FieldType/AdminPageFramework_FieldType_system.php:212
+msgid "cURL"
+msgstr "cURL"
+
+#: lib/afp/factory/AdminPageFramework_Factory/view/AdminPageFramework_FieldType/AdminPageFramework_FieldType_system.php:212
+msgid "SOAP"
+msgstr "SOAP"
+
+#: lib/afp/factory/AdminPageFramework_Factory/view/AdminPageFramework_FieldType/AdminPageFramework_FieldType_system.php:212
+msgid "SUHOSIN"
+msgstr "SUHOSIN"
+
+#: lib/afp/factory/AdminPageFramework_Factory/view/AdminPageFramework_FieldType/AdminPageFramework_FieldType_system.php:216
+msgid "Web Server"
+msgstr "Web Server"
+
+#: lib/afp/factory/AdminPageFramework_Factory/view/AdminPageFramework_FieldType/AdminPageFramework_FieldType_system.php:216
+msgid "Session"
+msgstr "Session"
+
+#: lib/afp/factory/AdminPageFramework_Factory/view/AdminPageFramework_FieldType/AdminPageFramework_FieldType_system.php:216
+msgid "Session Name"
+msgstr "Session Name"
+
+#: lib/afp/factory/AdminPageFramework_Factory/view/AdminPageFramework_FieldType/AdminPageFramework_FieldType_system.php:216
+msgid "Session Cookie Path"
+msgstr "Session Cookie Path"
+
+#: lib/afp/factory/AdminPageFramework_Factory/view/AdminPageFramework_FieldType/AdminPageFramework_FieldType_system.php:216
+msgid "Session Save Path"
+msgstr "Session Save Path"
+
+#: lib/afp/factory/AdminPageFramework_Factory/view/AdminPageFramework_FieldType/AdminPageFramework_FieldType_system.php:216
+msgid "Session Use Cookies"
+msgstr "Session Use Cookies"
+
+#: lib/afp/factory/AdminPageFramework_Factory/view/AdminPageFramework_FieldType/AdminPageFramework_FieldType_system.php:216
+msgid "Session Use Only Cookies"
+msgstr "Session Use Only Cookies"
+
+#~ msgid "Create an account for free"
+#~ msgstr "Créez un compte gratuitement"
+
+#~ msgid "Check this box to enable images optimization"
+#~ msgstr "Cochez cette case pour activer l'optimisation des images."
+
+#~ msgid "Rise this limit"
+#~ msgstr "Augmenter cette limite"
+
+#, php-format
+#~ msgid "%s\\% of french Wikipedia volume"
+#~ msgstr "%s\\% du volume de Wikipedia en Français"
+
+#, php-format
+#~ msgid "%s\\% of french Wikipedia volume !"
+#~ msgstr "%s\\% du volume de Wikipedia en Français !"
+
+#, php-format
+#~ msgid "%s times the french Wikipedia volume !"
+#~ msgstr "%s fois le volume de Wikipedia en Français!"
+
+#, php-format
+#~ msgid "%s% of french Wikipedia volume !"
+#~ msgstr "%s% du volume de Wikipedia en Français !"
+
+#~ msgid "seconds"
+#~ msgstr "secondes"
+
+#, php-format
+#~ msgid "%d day"
+#~ msgid_plural "%d days"
+#~ msgstr[0] "%d jour"
+#~ msgstr[1] "%d jours"

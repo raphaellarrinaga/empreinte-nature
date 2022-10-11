@@ -1,0 +1,126 @@
+.header {
+    background-color:#fff;
+    padding:20px 16px;
+    margin:10px 0 20px 0;
+    border:1px solid #ccc;
+    text-align:center;
+    position:relative;
+}
+.aide {
+    position:absolute;
+    top:10px;
+    right:10px;
+    text-align:right;
+}
+#poststuff {
+    border:1px solid #ccc;
+    border-top:none;
+    background-color:#fff;
+    padding:20px 16px;
+}
+h1 {
+    color:#2c3e50;
+    font-size:1.4em;
+}
+h2 {
+    color:#2c3e50;
+    font-size:1.2em;
+    font-weight:bold
+}
+.link-subscribe {
+    color:#df691a;
+}
+.link-subscribe:hover {
+    text-decoration: none;
+    color:#df691a;
+}
+.text-center {
+    text-align:center;
+}
+.text-primary {
+    color:#df691a;
+}
+
+.login {
+    width:80%;
+    min-width:520px;
+    margin:10px auto;
+    font-size:1.1em;
+    line-height:1.4em;
+}
+
+.login > tbody > tr > td {
+    width:50%;
+    padding:20px 10px;
+    vertical-align:top;
+}
+
+.login pre {
+    display:inline;
+    font-weight:bold;
+}
+
+.login > tbody > tr > td strong {
+    display:block;
+    margin-bottom:10px;
+}
+
+.login .border-right {
+    border-right:2px solid #df691a;
+}
+
+.login .form-table th {
+    width:60px;
+    padding-left:100px;
+}
+#api_key_form {
+    text-align:left;
+}
+input[type=text] {
+    width:280px;
+}
+.dashboard {
+    width:80%;
+    margin:10px auto;
+}
+
+.dashboard td {
+    width:25%;
+    text-align:center;
+    vertical-align: top;
+}
+
+.dashboard strong,
+.dashboard b {
+    display:block;
+    margin:0 auto;
+}
+
+.dashboard b {
+    font-size:3.5em;
+    line-height:1.2em;
+}
+
+.dashboard img {
+    margin-top:.5em;
+    margin-bottom:1em;
+}
+
+.dashboard span {
+    font-size: .8em;
+    line-height: 1.1em;
+    display: block;
+    margin-top: 7px;
+}
+
+.info-html {
+    background-color:#eee;
+    border:1px solid #ddd;
+    max-width:900px;
+    padding:20px 10px;
+    margin:50px auto 0 auto;
+}
+
+.info-html pre {
+    font-size:1.1em;
+}
