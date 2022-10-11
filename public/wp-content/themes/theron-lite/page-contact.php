@@ -146,9 +146,9 @@ Template Name: Contact Page
 
                    <?php if(have_posts()): ?><?php while(have_posts()): ?><?php the_post(); ?>
 
-                <div <?php post_class(); ?> id="post-<?php the_ID(); ?>"> 
+                <div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
-                
+
 
                 <div class="post_content">
 
@@ -162,7 +162,7 @@ Template Name: Contact Page
 
                     <?php the_content(); ?>
                 <!--   <div class="share_this">
-           			 <div class="social_buttons"> 
+           			 <div class="social_buttons">
                      <div class="lgn_fb">
                 <a href="https://www.facebook.com/RobinHubertyFashionDesign?fref=ts" title="Follow us on Facebook" target="_blank"></a>
                 </div>
@@ -170,15 +170,15 @@ Template Name: Contact Page
                 <div class="lgn_twt">
                 <a href="https://twitter.com/r_huberty" title="Follow us on Twitter" target="_blank"></a>
                 </div>
-                
+
                  <div class="lgn_insta">
-                <a href="http://instagram.com/rhuberty" title="Follow us on Instagram" target="_blank"></a>
+                <a href="https://instagram.com/rhuberty" title="Follow us on Instagram" target="_blank"></a>
                 </div>
                           </div>
 </div> -->
                     </div>
 
-                    
+
 
                     <div class="entry-content">
 
@@ -202,33 +202,33 @@ Template Name: Contact Page
 
               </div>
 
-                    
 
-                    </div> 
+
+                    </div>
 
                     <div style="clear:both"></div>
 
                     <div class="thn_post_wrap"><?php wp_link_pages('<p class="pages"><strong>'.__('Pages:').'</strong> ', '</p>', 'number'); ?></div>
 
-                    
 
-                    
+
+
 
                 </div>
 
-                
 
-                
 
-                
+
+
+
 
                         </div>
 
-            <?php endwhile ?> 
+            <?php endwhile ?>
 
                 </div>
 
-			
+
 
             <?php endif ?>
 
@@ -236,11 +236,11 @@ Template Name: Contact Page
 
     </div>
 
-   
+
 
     <!--PAGE END-->
 
-    
+
 
 <?php if(of_get_option('nosidebar_checkbox') == "0"){ ?><?php get_sidebar();?><?php } ?>
 

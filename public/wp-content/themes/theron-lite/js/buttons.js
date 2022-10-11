@@ -7,7 +7,7 @@
                 title : 'Quote Button',
                 image : url+'/buttons/quote.png',
                 onclick : function() {
-                    ed.selection.setContent('[quote]' + ed.selection.getContent() + '[/quote]');  
+                    ed.selection.setContent('[quote]' + ed.selection.getContent() + '[/quote]');
 
                 }
             });
@@ -26,7 +26,7 @@
                 title : 'Facebook like Button',
                 image : url+'/buttons/fblike.png',
                 onclick : function() {
-                     ed.selection.setContent('[fblike]');  
+                     ed.selection.setContent('[fblike]');
 
                 }
             });
@@ -46,7 +46,7 @@
                 title : 'Youtube Video',
                 image : url+'/buttons/youtube.png',
                 onclick : function() {
-                     ed.selection.setContent('[youtube width="600" height="365" video_id=""]');  
+                     ed.selection.setContent('[youtube width="600" height="365" video_id=""]');
 
                 }
             });
@@ -65,7 +65,7 @@
                 title : 'Vimeo Video',
                 image : url+'/buttons/vimeo.png',
                 onclick : function() {
-                     ed.selection.setContent('[vimeo width="600" height="365" video_id=""]');  
+                     ed.selection.setContent('[vimeo width="600" height="365" video_id=""]');
 
                 }
             });
@@ -80,12 +80,12 @@
 //Custom Buttons BUTTON
 (function() {
     tinymce.create('tinymce.plugins.button', {
-				init : function(ed, url) {		
+				init : function(ed, url) {
             ed.addButton('button', {
                 title : 'Link Button',
                 image : url+'/buttons/button.png',
                 onclick : function() {
-                     ed.selection.setContent('[button url="http://www.google.com" ]' + ed.selection.getContent() + '[/button]');  
+                     ed.selection.setContent('[button url="https://www.google.com" ]' + ed.selection.getContent() + '[/button]');
 
                 }
             });

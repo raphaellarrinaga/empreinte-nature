@@ -2,7 +2,7 @@
 
 
 
-<html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
+<html xmlns="https://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
 
 
 
@@ -10,7 +10,7 @@
 
 
 
-<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />	
+<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 
 
 
@@ -38,7 +38,7 @@
 
 
 
-    
+
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/custom.css" media="screen" />
 <script type="text/javascript">
 
@@ -95,7 +95,7 @@ jQuery(".closePage").click(function(){ jQuery( "#Div_1" ).fadeOut( "slow");})
 
         <div id="menu_wrap" class="is_sticky"><div class="center"><div id="topmenu">
 
-		
+
 
         <div id="menu-left">
 
@@ -117,7 +117,7 @@ jQuery(".closePage").click(function(){ jQuery( "#Div_1" ).fadeOut( "slow");})
 
 
 
-        
+
 
 
 

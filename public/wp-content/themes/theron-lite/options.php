@@ -8,7 +8,7 @@
 
  * If the identifier changes, it'll appear as if the options have been reset.
 
- * 
+ *
 
  */
 
@@ -24,17 +24,17 @@ function theron_option_name() {
 
 	} else {
 
-	$themename = get_theme_data(STYLESHEETPATH . '/style.css');	
+	$themename = get_theme_data(STYLESHEETPATH . '/style.css');
 
 	}
 
-	
+
 
 	$themename = $themename['Name'];
 
 	$themename = preg_replace("/\W/", "", strtolower($themename) );
 
-	
+
 
 	$theron_settings = get_option('theron');
 
@@ -52,7 +52,7 @@ function theron_option_name() {
 
  * When creating the "id" fields, make sure to use all lowercase and no spaces.
 
- *  
+ *
 
  */
 
@@ -60,7 +60,7 @@ function theron_option_name() {
 
 function theron_options() {
 
-	
+
 
 	// Test data
 
@@ -70,7 +70,7 @@ $numberfront_array = array("1" => "One","2" => "Two","3" => "Three","4" => "Four
 
 
 
-	// Fonts Array	
+	// Fonts Array
 
 	$fonts_array = array(
 
@@ -83,31 +83,31 @@ $numberfront_array = array("1" => "One","2" => "Two","3" => "Three","4" => "Four
 
 	);
 
-	
+
 
 	// Test data
 
 	$slider_array = array("nivo" => "Nivo Slider","noslider" => "No Slider");
 
-	
 
-	
+
+
 
 	// Multicheck Defaults
 
 	$multicheck_defaults = array("one" => "1","five" => "1");
 
-	
+
 
 	// Background Defaults
 
-	
+
 
 	$background_defaults = array('color' => '', 'image' => '', 'repeat' => 'repeat','position' => 'top center','attachment'=>'scroll');
 
-	
 
-	
+
+
 
 	// Editor Defaults
 
@@ -123,11 +123,11 @@ $numberfront_array = array("1" => "One","2" => "Two","3" => "Three","4" => "Four
 
 	);
 
-	
+
 
 	// Pull all the categories into an array
 
-	$options_categories = array();  
+	$options_categories = array();
 
 	$options_categories_obj = get_categories();
 
@@ -137,11 +137,11 @@ $numberfront_array = array("1" => "One","2" => "Two","3" => "Three","4" => "Four
 
 	}
 
-	
+
 
 	// Pull all the pages into an array
 
-	$options_pages = array();  
+	$options_pages = array();
 
 	$options_pages_obj = get_pages('sort_column=post_parent,menu_order');
 
@@ -153,23 +153,23 @@ $numberfront_array = array("1" => "One","2" => "Two","3" => "Three","4" => "Four
 
 	}
 
-		
+
 
 	// If using image radio buttons, define a directory path
 
 	$imagepath =  get_template_directory_uri() . '/admin/images/';
 
-		
+
 
 	$options = array();
 
-		
+
 
 	$options[] = array( "name" => __('Basic', 'theron'),
 
 						"type" => "heading");
 
-						
+
 
 	$options[] = array( "name" => __('Select Font', 'theron'),
 
@@ -187,7 +187,7 @@ $numberfront_array = array("1" => "One","2" => "Two","3" => "Three","4" => "Four
 
 
 
-						
+
 
 	$options[] = array( "name" => __('Flavour', 'theron'),
 
@@ -199,7 +199,7 @@ $numberfront_array = array("1" => "One","2" => "Two","3" => "Three","4" => "Four
 
 						"type" => "color");
 
-						
+
 
 	$options[] = array( "name" => __('Text Color on Flavour Color', 'theron'),
 
@@ -209,11 +209,11 @@ $numberfront_array = array("1" => "One","2" => "Two","3" => "Three","4" => "Four
 
 						"std" => "#ffffff",
 
-						"type" => "color");						
+						"type" => "color");
 
-						
 
-						
+
+
 
 	$options[] = array( "name" => __('Pattern images', 'theron'),
 
@@ -225,9 +225,9 @@ $numberfront_array = array("1" => "One","2" => "Two","3" => "Three","4" => "Four
 
 						"type" => "checkbox");
 
-						
 
-						
+
+
 
 	$options[] = array( "name" => __('Sticky Menu', 'theron'),
 
@@ -239,9 +239,9 @@ $numberfront_array = array("1" => "One","2" => "Two","3" => "Three","4" => "Four
 
 						"type" => "checkbox");
 
-						
 
-						
+
+
 
 	$options[] = array( "name" => __('Rounded', 'theron'),
 
@@ -253,7 +253,7 @@ $numberfront_array = array("1" => "One","2" => "Two","3" => "Three","4" => "Four
 
 						"type" => "checkbox");
 
-						
+
 
 	$options[] = array( "name" => __('Right Sidebar', 'theron'),
 
@@ -265,7 +265,7 @@ $numberfront_array = array("1" => "One","2" => "Two","3" => "Three","4" => "Four
 
 						"type" => "checkbox");
 
-						
+
 
 	$options[] = array( "name" => __('Footer Content', 'theron'),
 
@@ -275,9 +275,9 @@ $numberfront_array = array("1" => "One","2" => "Two","3" => "Three","4" => "Four
 
 						"std" => "",
 
-						"type" => "textarea"); 
+						"type" => "textarea");
 
-							
+
 
 
 
@@ -285,7 +285,7 @@ $numberfront_array = array("1" => "One","2" => "Two","3" => "Three","4" => "Four
 
 						"type" => "heading");
 
-						
+
 
 	$options[] = array( "name" => __('Front Page Layout', 'theron'),
 
@@ -305,7 +305,7 @@ $numberfront_array = array("1" => "One","2" => "Two","3" => "Three","4" => "Four
 
 						);
 
-						
+
 
 	$options[] = array( "name" => __('Welcome Text', 'theron'),
 
@@ -317,9 +317,9 @@ $numberfront_array = array("1" => "One","2" => "Two","3" => "Three","4" => "Four
 
 						"type" => "editor",
 
-						'settings' => $wp_editor_settings); 
+						'settings' => $wp_editor_settings);
 
-						
+
 
 	$options[] = array( "name" => __('Enable Latest Posts', 'theron'),
 
@@ -331,7 +331,7 @@ $numberfront_array = array("1" => "One","2" => "Two","3" => "Three","4" => "Four
 
 						"type" => "checkbox");
 
-						
+
 
 	$options[] = array( "name" => __('Show Posts from a certain Category', 'theron'),
 
@@ -343,7 +343,7 @@ $numberfront_array = array("1" => "One","2" => "Two","3" => "Three","4" => "Four
 
 						"type" => "checkbox");
 
-						
+
 
 	$options[] = array( "name" => __('Front Page Posts Category', 'theron'),
 
@@ -355,9 +355,9 @@ $numberfront_array = array("1" => "One","2" => "Two","3" => "Three","4" => "Four
 
 						"class" => "mini",
 
-						"options" => $options_categories);						
+						"options" => $options_categories);
 
-						
+
 
 	$options[] = array( "name" => __('Number of Front page Posts', 'theron'),
 
@@ -373,11 +373,11 @@ $numberfront_array = array("1" => "One","2" => "Two","3" => "Three","4" => "Four
 
 						"options" => $numberfront_array);
 
-						
 
-												
 
-												
+
+
+
 
 	$options[] = array( "name" => __('Enable Blocks', 'theron'),
 
@@ -389,7 +389,7 @@ $numberfront_array = array("1" => "One","2" => "Two","3" => "Three","4" => "Four
 
 						"type" => "checkbox");
 
-						
+
 
 	$options[] = array( "name" => __('Block 1 Heading', 'theron'),
 
@@ -401,7 +401,7 @@ $numberfront_array = array("1" => "One","2" => "Two","3" => "Three","4" => "Four
 
 						"type" => "text");
 
-							
+
 
 	$options[] = array( "name" => __('Block 1 Text', 'theron'),
 
@@ -413,9 +413,9 @@ $numberfront_array = array("1" => "One","2" => "Two","3" => "Three","4" => "Four
 
 						"type" => "editor",
 
-						'settings' => $wp_editor_settings); 
+						'settings' => $wp_editor_settings);
 
-						
+
 
 	$options[] = array( "name" => __('Block 1 Link', 'theron'),
 
@@ -423,11 +423,11 @@ $numberfront_array = array("1" => "One","2" => "Two","3" => "Three","4" => "Four
 
 						"id" => "block1_link",
 
-						"std" => "http://wordpress.org/",
+						"std" => "https://wordpress.org/",
 
 						"type" => "text");
 
-						
+
 
 	$options[] = array( "name" => __('Block 2 Heading', 'theron'),
 
@@ -439,7 +439,7 @@ $numberfront_array = array("1" => "One","2" => "Two","3" => "Three","4" => "Four
 
 						"type" => "text");
 
-							
+
 
 	$options[] = array( "name" => __('Block 2 Text', 'theron'),
 
@@ -451,9 +451,9 @@ $numberfront_array = array("1" => "One","2" => "Two","3" => "Three","4" => "Four
 
 						"type" => "editor",
 
-						'settings' => $wp_editor_settings);  
+						'settings' => $wp_editor_settings);
 
-						
+
 
 	$options[] = array( "name" => __('Block 2 Link', 'theron'),
 
@@ -477,7 +477,7 @@ $numberfront_array = array("1" => "One","2" => "Two","3" => "Three","4" => "Four
 
 						"type" => "text");
 
-							
+
 
 	$options[] = array( "name" => __('Block 3 Text', 'theron'),
 
@@ -489,9 +489,9 @@ $numberfront_array = array("1" => "One","2" => "Two","3" => "Three","4" => "Four
 
 						"type" => "editor",
 
-						'settings' => $wp_editor_settings); 
+						'settings' => $wp_editor_settings);
 
-						
+
 
 	$options[] = array( "name" => __('Block 3 Link', 'theron'),
 
@@ -515,7 +515,7 @@ $numberfront_array = array("1" => "One","2" => "Two","3" => "Three","4" => "Four
 
 						"type" => "text");
 
-							
+
 
 	$options[] = array( "name" => __('Block 4 Text', 'theron'),
 
@@ -527,9 +527,9 @@ $numberfront_array = array("1" => "One","2" => "Two","3" => "Three","4" => "Four
 
 						"type" => "editor",
 
-						'settings' => $wp_editor_settings); 
+						'settings' => $wp_editor_settings);
 
-						
+
 
 	$options[] = array( "name" => __('Block 4 Link', 'theron'),
 
@@ -541,7 +541,7 @@ $numberfront_array = array("1" => "One","2" => "Two","3" => "Three","4" => "Four
 
 						"type" => "text");
 
-						
+
 
 	$options[] = array( "name" => __('Facebook', 'theron'),
 
@@ -553,7 +553,7 @@ $numberfront_array = array("1" => "One","2" => "Two","3" => "Three","4" => "Four
 
 						"type" => "text");
 
-						
+
 
 	$options[] = array( "name" => __('Twitter', 'theron'),
 
@@ -565,7 +565,7 @@ $numberfront_array = array("1" => "One","2" => "Two","3" => "Three","4" => "Four
 
 						"type" => "text");
 
-						
+
 
 	$options[] = array( "name" => __('Google Plus', 'theron'),
 
@@ -577,7 +577,7 @@ $numberfront_array = array("1" => "One","2" => "Two","3" => "Three","4" => "Four
 
 						"type" => "text");
 
-						
+
 
 	$options[] = array( "name" => __('Youtube', 'theron'),
 
@@ -589,7 +589,7 @@ $numberfront_array = array("1" => "One","2" => "Two","3" => "Three","4" => "Four
 
 						"type" => "text");
 
-						
+
 
 	$options[] = array( "name" => __('Flickr', 'theron'),
 
@@ -601,7 +601,7 @@ $numberfront_array = array("1" => "One","2" => "Two","3" => "Three","4" => "Four
 
 						"type" => "text");
 
-						
+
 
 	$options[] = array( "name" => __('Linkedin', 'theron'),
 
@@ -613,7 +613,7 @@ $numberfront_array = array("1" => "One","2" => "Two","3" => "Three","4" => "Four
 
 						"type" => "text");
 
-						
+
 
 	$options[] = array( "name" => __('Pinterest', 'theron'),
 
@@ -625,7 +625,7 @@ $numberfront_array = array("1" => "One","2" => "Two","3" => "Three","4" => "Four
 
 						"type" => "text");
 
-						
+
 
 	$options[] = array( "name" => __('Tumblr', 'theron'),
 
@@ -637,7 +637,7 @@ $numberfront_array = array("1" => "One","2" => "Two","3" => "Three","4" => "Four
 
 						"type" => "text");
 
-						
+
 
 	$options[] = array( "name" => __('Instagram', 'theron'),
 
@@ -649,7 +649,7 @@ $numberfront_array = array("1" => "One","2" => "Two","3" => "Three","4" => "Four
 
 						"type" => "text");
 
-						
+
 
 	$options[] = array( "name" => __('Vimeo', 'theron'),
 
@@ -661,7 +661,7 @@ $numberfront_array = array("1" => "One","2" => "Two","3" => "Three","4" => "Four
 
 						"type" => "text");
 
-						
+
 
 	$options[] = array( "name" => __('Rss', 'theron'),
 
@@ -673,17 +673,17 @@ $numberfront_array = array("1" => "One","2" => "Two","3" => "Three","4" => "Four
 
 						"type" => "text");
 
-						
 
-			
 
-						
+
+
+
 
 	$options[] = array( "name" => __('Slider', 'theron'),
 
 						"type" => "heading");
 
-						
+
 
 	$options[] = array( "name" => __('Select Slider', 'theron'),
 
@@ -699,9 +699,9 @@ $numberfront_array = array("1" => "One","2" => "Two","3" => "Three","4" => "Four
 
 						"options" => $slider_array);
 
-						
 
-						
+
+
 
 	$options[] = array( "name" => __('Slider Speed', 'theron'),
 
@@ -713,9 +713,9 @@ $numberfront_array = array("1" => "One","2" => "Two","3" => "Three","4" => "Four
 
 						"class" => "mini",
 
-						"type" => "text");	
+						"type" => "text");
 
-						
+
 
 	$options[] = array( "name" => __('Number of Slides', 'theron'),
 
@@ -731,9 +731,9 @@ $numberfront_array = array("1" => "One","2" => "Two","3" => "Three","4" => "Four
 
 						"options" => $number_array);
 
-						
 
-						
+
+
 
 	$options[] = array( "name" => __('Slider Content', 'theron'),
 
@@ -743,9 +743,9 @@ $numberfront_array = array("1" => "One","2" => "Two","3" => "Three","4" => "Four
 
 						"std" => "1",
 
-						"type" => "checkbox");	
+						"type" => "checkbox");
 
-						
+
 
 	$options[] = array( "name" => __('Nivo Slider thumbnails', 'theron'),
 
@@ -755,9 +755,9 @@ $numberfront_array = array("1" => "One","2" => "Two","3" => "Three","4" => "Four
 
 						"std" => "1",
 
-						"type" => "checkbox");				
+						"type" => "checkbox");
 
-						
+
 
 
 
@@ -765,7 +765,7 @@ $numberfront_array = array("1" => "One","2" => "Two","3" => "Three","4" => "Four
 
 						"type" => "heading");
 
-						
+
 
 	$options[] = array( "name" => __('Post Sharing', 'theron'),
 
@@ -777,9 +777,9 @@ $numberfront_array = array("1" => "One","2" => "Two","3" => "Three","4" => "Four
 
 						"type" => "checkbox");
 
-						
 
-						
+
+
 
 	$options[] = array( "name" => __('Post Author Name', 'theron'),
 
@@ -791,7 +791,7 @@ $numberfront_array = array("1" => "One","2" => "Two","3" => "Three","4" => "Four
 
 						"type" => "checkbox");
 
-						
+
 
 	$options[] = array( "name" => __('Category & Tags', 'theron'),
 
@@ -803,7 +803,7 @@ $numberfront_array = array("1" => "One","2" => "Two","3" => "Three","4" => "Four
 
 						"type" => "checkbox");
 
-						
+
 
 	$options[] = array( "name" => __('Lightbox', 'theron'),
 
@@ -815,7 +815,7 @@ $numberfront_array = array("1" => "One","2" => "Two","3" => "Three","4" => "Four
 
 						"type" => "checkbox");
 
-						
+
 
 	$options[] = array( "name" => "Blog Page Category",
 
@@ -829,7 +829,7 @@ $numberfront_array = array("1" => "One","2" => "Two","3" => "Three","4" => "Four
 
 						"options" => $options_categories);
 
-						
+
 
 	$options[] = array( "name" => __('Contact Page Email', 'theron'),
 
@@ -841,31 +841,31 @@ $numberfront_array = array("1" => "One","2" => "Two","3" => "Three","4" => "Four
 
 						"class" => "mini",
 
-						"type" => "text");	
+						"type" => "text");
 
-						
 
-						
 
-						
+
+
+
 
 	$options[] = array( "name" => __('Documentation', 'theron'),
 
 						"type" => "heading");
 
-						
+
 
 	$options[] = array( "name" => __('About', 'theron'),
 
-						"type" => "heading");	
+						"type" => "heading");
 
-						
+
 
 	$options[] = array( "name" => __('Upgrade', 'theron'),
 
 						"type" => "heading");
 
-													
+
 
 	return $options;
 

@@ -1,6 +1,6 @@
 <div id="tab_upg">
                 <div class="tab" id="tab-8">
-                    
+
                   <div class="tab_option" id="sub_feat">
                   <h4><label>Theron PRO Features </label></h4>
                   <p>Here are the features comparison between Theron Lite and Theron PRO</p>
@@ -76,7 +76,7 @@
 </tr>
 
 <tr>
-<td valign="top" class="feat" ><p><b>Add Custom Font via <a style="text-decoration:none; color:#2BB975;" href="http://www.google.com/webfonts/" target="_blank">Google webfont</a></b></p></td>
+<td valign="top" class="feat" ><p><b>Add Custom Font via <a style="text-decoration:none; color:#2BB975;" href="https://www.google.com/webfonts/" target="_blank">Google webfont</a></b></p></td>
 <td valign="top" class="lite" ><p class="no">NO</p></td>
 <td valign="top" class="pro" ><p class="yes">YES</p></td>
 </tr>
@@ -164,40 +164,40 @@ Integration</b></p></td>
 </table>
 
  	</div>
-  
-<div class="tab_option">        
+
+<div class="tab_option">
                  <h4><label>Examples </label></h4>
 <p>With Theron PRO the outcome is unlimited. The images below are the example of what you can do with the PRO version, without touching any code or modifying any template files. Just with the Theme Options:</p>
 
 <p class="screenp">
-<a class="screen1" href="http://i.imgur.com/fUoCGh.jpg" target="_blank">Example 1</a>
-<a class="screen2" href="http://i.imgur.com/3Cssdh.jpg" target="_blank">Example 2</a>
-<a class="screen3" href="http://i.imgur.com/M1o1vh.jpg" target="_blank">Example 3</a>
-<a class="screen4" href="http://i.imgur.com/irgleh.jpg" target="_blank">Example 4</a>
-<a class="screen5" href="http://i.imgur.com/dMF4ph.jpg" target="_blank">Example 5</a>
-<a class="screen6" href="http://i.imgur.com/EqFFJh.jpg" target="_blank">Example 6</a>
-<a class="screen7" href="http://i.imgur.com/BoqUxh.jpg" target="_blank">Example 7</a>
-<a class="screen8" href="http://i.imgur.com/KZ0o8h.jpg" target="_blank">Example 8</a>
-<a class="screen9" href="http://i.imgur.com/M0X6Dh.jpg" target="_blank">Example 9</a>
-<a class="screen10" href="http://i.imgur.com/ZvoP9h.jpg" target="_blank">Example 10</a>
+<a class="screen1" href="https://i.imgur.com/fUoCGh.jpg" target="_blank">Example 1</a>
+<a class="screen2" href="https://i.imgur.com/3Cssdh.jpg" target="_blank">Example 2</a>
+<a class="screen3" href="https://i.imgur.com/M1o1vh.jpg" target="_blank">Example 3</a>
+<a class="screen4" href="https://i.imgur.com/irgleh.jpg" target="_blank">Example 4</a>
+<a class="screen5" href="https://i.imgur.com/dMF4ph.jpg" target="_blank">Example 5</a>
+<a class="screen6" href="https://i.imgur.com/EqFFJh.jpg" target="_blank">Example 6</a>
+<a class="screen7" href="https://i.imgur.com/BoqUxh.jpg" target="_blank">Example 7</a>
+<a class="screen8" href="https://i.imgur.com/KZ0o8h.jpg" target="_blank">Example 8</a>
+<a class="screen9" href="https://i.imgur.com/M0X6Dh.jpg" target="_blank">Example 9</a>
+<a class="screen10" href="https://i.imgur.com/ZvoP9h.jpg" target="_blank">Example 10</a>
 </p>
-                
+
                 </div>
-  
-                
-                <div class="tab_option" id="sub_get">        
-                 
-                
+
+
+                <div class="tab_option" id="sub_get">
+
+
                 <p style="text-align:center;">
-                <a class="thnbttn" href="http://theronpro.towfiqi.com/" target="_blank">Theron PRO DEMO</a>
-                
-                <a class="thnbttn" href="http://www.towfiqi.com/theron-pro-wordpress-theme.html" target="_blank">UPGRADE TO Theron PRO</a>
+                <a class="thnbttn" href="https://theronpro.towfiqi.com/" target="_blank">Theron PRO DEMO</a>
+
+                <a class="thnbttn" href="https://www.towfiqi.com/theron-pro-wordpress-theme.html" target="_blank">UPGRADE TO Theron PRO</a>
                 </p>
-                
+
                 <br /><br /><br />
 
                 <p><b>DEMO TESTING:</b> Click the "Color Switcher" button from left to test the color changing ability of the theme. Click the "Control Panel" from top to check out the fonts and the layouts.</p>
                 </div>
-                
+
                 </div>
                 </div>

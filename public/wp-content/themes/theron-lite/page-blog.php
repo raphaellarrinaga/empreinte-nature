@@ -14,11 +14,11 @@ Template Name: Blog
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
+<html xmlns="https://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
 
 <head>
 
-<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />	
+<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 
 <title><?php bloginfo('name'); ?><?php wp_title(); ?></title>
 
@@ -44,7 +44,7 @@ Template Name: Blog
 
 
 
- <!--SOCIAL ICONS-->   
+ <!--SOCIAL ICONS-->
 
 <div class="social_wrap">
 
@@ -102,9 +102,9 @@ Template Name: Blog
 
 </div>
 
-  <!--SOCIAL ICONS END-->   
+  <!--SOCIAL ICONS END-->
 
-</div> 
+</div>
 
 
 
@@ -128,11 +128,11 @@ Template Name: Blog
 
         </div>
 
-        
+
 
         <!--LOGO END-->
 
-        
+
 
         <!--MENU STARTS-->
 
@@ -140,7 +140,7 @@ Template Name: Blog
 
         <!--MENU END-->
 
-        
+
 
 
 
@@ -187,11 +187,11 @@ Template Name: Blog
 
 while (have_posts()) : the_post();?>
 
-                   
 
-                <div <?php post_class(); ?> id="post-<?php the_ID(); ?>"> 
 
-<div class="single_post">                
+                <div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+
+<div class="single_post">
 
                 <div class="post_content">
 
@@ -209,9 +209,9 @@ while (have_posts()) : the_post();?>
 
                     <div class="theron_post_wrap"><?php wp_link_pages('<p class="pages"><strong>'.__('Pages:').'</strong> ', '</p>', 'number'); ?></div>
 
-                    
 
-                    
+
+
 
                     <!--Post Footer-->
 
@@ -225,31 +225,31 @@ while (have_posts()) : the_post();?>
 
      <?php if( has_category() ) { ?><div class="post_cat"><div class="catag_list"><?php the_category(' '); ?></div></div><?php } ?>
 
-                        
+
 
                         </div>
 
 					<?php } ?>
 
-                        
+
 
                    </div>
 
-                    
+
 
                 </div>
 
-                
+
 
 <?php if(of_get_option('dissshare_checkbox') == "0"){ ?><?php get_template_part('share_this');?><?php } ?>
 
-                
+
 
                         </div>
 
-                </div>                        
+                </div>
 
-            <?php endwhile ?> 
+            <?php endwhile ?>
 
 
 
@@ -265,7 +265,7 @@ while (have_posts()) : the_post();?>
 
 
 
-            
+
 
 <?php if(of_get_option('nosidebar_checkbox') == "0"){ ?><?php get_sidebar();?><?php } ?>
 

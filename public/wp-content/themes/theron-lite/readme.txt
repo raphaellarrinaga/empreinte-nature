@@ -6,12 +6,12 @@
 #The images slide1.jpg, slide2.jpg, slide1_thumb.jpg & slide2_thumb.jpg in the "images" folder are Public domain images.
 
 #Image credit links:
-http://pixabay.com/en/bloom-blooming-blossom-branch-2525/
-http://www.publicdomainpictures.net/view-image.php?image=20351&picture=water
+https://pixabay.com/en/bloom-blooming-blossom-branch-2525/
+https://www.publicdomainpictures.net/view-image.php?image=20351&picture=water
 
 #All other graphics used in this theme is desgined by me and licensed under GNU GPL v2
 
 
-#Limitations: 
-IE6 and IE7 is not compatible. 
+#Limitations:
+IE6 and IE7 is not compatible.
 

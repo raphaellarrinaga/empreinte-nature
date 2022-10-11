@@ -2,17 +2,17 @@
  * FancyBox - jQuery Plugin
  * Simple and fancy lightbox alternative
  *
- * Examples and documentation at: http://fancybox.net
- * 
+ * Examples and documentation at: https://fancybox.net
+ *
  * Copyright (c) 2008 - 2010 Janis Skarnelis
  * That said, it is hardly a one-person project. Many people have submitted bugs, code, and offered their advice freely. Their support is greatly appreciated.
- * 
+ *
  * Version: 1.3.4 (11/11/2010)
  * Requires: jQuery v1.3+
  *
  * Dual licensed under the MIT and GPL licenses:
- *   http://www.opensource.org/licenses/mit-license.php
- *   http://www.gnu.org/licenses/gpl.html
+ *   https://www.opensource.org/licenses/mit-license.php
+ *   https://www.gnu.org/licenses/gpl.html
  */
 
 ;(function(b){var m,t,u,f,D,j,E,n,z,A,q=0,e={},o=[],p=0,d={},l=[],G=null,v=new Image,J=/\.(jpg|gif|png|bmp|jpeg)(.*)?$/i,W=/[^\.]\.(swf)\s*$/i,K,L=1,y=0,s="",r,i,h=false,B=b.extend(b("<div/>")[0],{prop:0}),M=b.browser.msie&&b.browser.version<7&&!window.XMLHttpRequest,N=function(){t.hide();v.onerror=v.onload=null;G&&G.abort();m.empty()},O=function(){if(false===e.onError(o,q,e)){t.hide();h=false}else{e.titleShow=false;e.width="auto";e.height="auto";m.html('<p id="fancybox-error">The requested content cannot be loaded.<br />Please try again later.</p>');
@@ -47,11 +47,11 @@ easingOut:"swing",showCloseButton:true,showNavArrows:true,enableEscapeButton:tru
 
 //Implement Fancybox
 jQuery(function() {
-	
+
 	jQuery('.single_post a, .type-attachment a').has('img').addClass('hasimg');
 	jQuery('.imgwrap a').removeClass('hasimg');
 	jQuery(".post_content .gallery .hasimg[href$='.jpg'], .post_content .gallery .hasimg[href$='.png'], .post_content .gallery .hasimg[href$='.gif']").addClass('grouped_elements');
-	jQuery('.post_content .gallery .hasimg').attr("rel","group1");	
+	jQuery('.post_content .gallery .hasimg').attr("rel","group1");
 	jQuery(".hasimg[href$='.jpg'], .hasimg[href$='.png'], .hasimg[href$='.gif'], a.grouped_elements").fancybox({
 		'transitionIn'	:	'elastic',
 		'transitionOut'	:	'elastic',

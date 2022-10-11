@@ -2,7 +2,7 @@
 /*
 Description: A framework for building theme options.
 Author: Devin Price
-Author URI: http://www.wptheming.com
+Author URI: https://www.wptheming.com
 License: GPLv2
 Version: 1.6
 */
@@ -44,13 +44,13 @@ function theron_load_sanitization() {
 	require_once dirname( __FILE__ ) . '/options-sanitize.php';
 }
 
-/* 
+/*
  * Creates the settings in the database by looping through the array
  * we supplied in options.php.  This is a neat way to do it since
  * we won't have to save settings for headers, descriptions, or arguments.
  *
  * Read more about the Settings API in the WordPress codex:
- * http://codex.wordpress.org/Settings_API
+ * https://codex.wordpress.org/Settings_API
  *
  */
 
@@ -59,14 +59,14 @@ function theron_init() {
 	// Include the required files
 	require_once dirname( __FILE__ ) . '/options-interface.php';
 	require_once dirname( __FILE__ ) . '/options-media-uploader.php';
-	
+
 	// Optionally Loads the options file from the theme
 	$location = apply_filters( 'options_framework_location', array( 'options.php' ) );
 	$optionsfile = locate_template( $location );
-	
+
 	// Load settings
 	$theron_settings = get_option('optionsframework' );
-	
+
 	// Updates the unique option id in the database if it has changed
 	if ( function_exists( 'theron_option_name' ) ) {
 		theron_option_name();
@@ -92,7 +92,7 @@ function theron_init() {
 			update_option( 'optionsframework', $theron_settings );
 		}
 	}
-	
+
 	// If the option has no saved data, load the defaults
 	if ( ! get_option( $theron_settings['id'] ) ) {
 		theron_setdefaults();
@@ -106,7 +106,7 @@ function theron_init() {
 
 /**
  * Ensures that a user with the 'edit_theme_options' capability can actually set the options
- * See: http://core.trac.wordpress.org/ticket/14365
+ * See: https://core.trac.wordpress.org/ticket/14365
  *
  * @param string $capability The capability used for the page, which is manage_options by default.
  * @return string The capability to actually use.
@@ -116,31 +116,31 @@ function theron_page_capability( $capability ) {
 	return 'edit_theme_options';
 }
 
-/* 
+/*
  * Adds default options to the database if they aren't already present.
  * May update this later to load only on plugin activation, or theme
  * activation since most people won't be editing the options.php
  * on a regular basis.
  *
- * http://codex.wordpress.org/Function_Reference/add_option
+ * https://codex.wordpress.org/Function_Reference/add_option
  *
  */
 
 function theron_setdefaults() {
-	
+
 	$theron_settings = get_option( 'optionsframework' );
 
 	// Gets the unique option id
 	$option_name = $theron_settings['id'];
-	
-	/* 
+
+	/*
 	 * Each theme will hopefully have a unique id, and all of its options saved
 	 * as a separate option set.  We need to track all of these option sets so
 	 * it can be easily deleted if someone wishes to remove the plugin and
-	 * its associated data.  No need to clutter the database.  
+	 * its associated data.  No need to clutter the database.
 	 *
 	 */
-	
+
 	if ( isset( $theron_settings['knownoptions'] ) ) {
 		$knownoptions =  $theron_settings['knownoptions'];
 		if ( !in_array( $option_name, $knownoptions ) ) {
@@ -153,13 +153,13 @@ function theron_setdefaults() {
 		$theron_settings['knownoptions'] = $newoptionname;
 		update_option( 'optionsframework', $theron_settings );
 	}
-	
+
 	// Gets the default options data from the array in options.php
 	$options =& _theron_options();
-	
+
 	// If the options haven't been added to the database yet, they are added now
 	$values = of_get_default_values();
-	
+
 	if ( isset( $values ) ) {
 		add_option( $option_name, $values ); // Add option with default settings
 	}
@@ -225,16 +225,16 @@ function theron_ctrl_load_js() { ?>
 		});
 		jQuery('#optionsframework .about').load('<?php echo get_stylesheet_directory_uri(); ?>/admin/about.php');
 		jQuery('#optionsframework .upgrade').load('<?php echo get_stylesheet_directory_uri(); ?>/admin/upgrade.php');
-		
+
 
 		jQuery('#optionsframework input[type=checkbox]').checkbox({empty: '<?php echo get_stylesheet_directory_uri(); ?>/admin/images/empty.png'});
 
-		
+
 		});
 	/* ]]> */
 	</script>
 <?php } ?>
-    <?php } 
+    <?php }
 
 
 /* Loads the javascript */
@@ -257,7 +257,7 @@ function theron_load_scripts( $hook ) {
 		);
 		wp_localize_script( 'wp-color-picker', 'wpColorPickerL10n', $colorpicker_l10n );
 	}
-	
+
 	// Enqueue custom option panel JS
 	wp_enqueue_script( 'options-custom', OPTIONS_FRAMEWORK_DIRECTORY . 'js/options-custom.js', array( 'jquery','wp-color-picker' ) );
 
@@ -270,7 +270,7 @@ function of_admin_head() {
 	do_action( 'theron_custom_scripts' );
 }
 
-/* 
+/*
  * Builds out the options panel.
  *
  * If we were using the Settings API as it was likely intended we would use
@@ -309,7 +309,7 @@ function theron_page() {
 	</div>
 	<?php do_action( 'theron_after' ); ?>
 	</div> <!-- / .wrap -->
-	
+
 <?php
 }
 endif;
@@ -336,14 +336,14 @@ function theron_validate( $input ) {
 		add_settings_error( 'options-framework', 'restore_defaults', __( 'Default options restored.', 'options_framework_theme' ), 'updated fade' );
 		return of_get_default_values();
 	}
-	
+
 	/*
 	 * Update Settings
 	 *
 	 * This used to check for $_POST['update'], but has been updated
 	 * to be compatible with the theme customizer introduced in WordPress 3.4
 	 */
-	 
+
 	$clean = array();
 	$options =& _theron_options();
 	foreach ( $options as $option ) {
@@ -375,17 +375,17 @@ function theron_validate( $input ) {
 			$clean[$id] = apply_filters( 'of_sanitize_' . $option['type'], $input[$id], $option );
 		}
 	}
-	
+
 	// Hook to run after validation
 	do_action( 'theron_after_validate', $clean );
-	
+
 	return $clean;
 }
 
 /**
  * Display message when options have been saved
  */
- 
+
 function theron_save_options_notice() {
 	add_settings_error( 'options-framework', 'save_options', __( 'Options saved.', 'options_framework_theme' ), 'updated fade' );
 }
@@ -405,7 +405,7 @@ add_action( 'theron_after_validate', 'theron_save_options_notice' );
  *
  * @access    private
  */
- 
+
 function of_get_default_values() {
 	$output = array();
 	$config =& _theron_options();

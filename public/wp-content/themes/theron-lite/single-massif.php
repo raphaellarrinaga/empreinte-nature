@@ -134,9 +134,9 @@
 
                    <?php if(have_posts()): ?><?php while(have_posts()): ?><?php the_post(); ?>
 
-                <div <?php post_class(); ?> id="post-<?php the_ID(); ?>"> 
+                <div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
-              
+
 
                     <div class="imgwrap">
 
@@ -144,7 +144,7 @@
 
 
 
-                   
+
 
                 </div>
 
@@ -165,7 +165,7 @@
 
 
   <div id="massifgallery">
-        <?php 
+        <?php
 
 $galleryarray = get_post_gallery_ids($post->ID);
 
@@ -195,7 +195,7 @@ foreach ($galleryarray as $id) {
   <?php $value = get_field( "composition" );
 echo $value
  ?>
-<p><a id="ficheplantes" href="http://empreinte-nature.be/imgs/ficheplantes_soleil.pdf" target="_blank">Vous trouverez un descriptif de toutes nos plantes sur ce pdf</a></p>
+<p><a id="ficheplantes" href="https://empreinte-nature.be/imgs/ficheplantes_soleil.pdf" target="_blank">Vous trouverez un descriptif de toutes nos plantes sur ce pdf</a></p>
 </div>
 
        <div class="entry-content">
@@ -225,19 +225,19 @@ echo $valueprix
 
 
 </div>
-       
+
 </div>
                     <div style="clear:both"></div>
 
-                    
+
 
                     <div class="thn_post_wrap"><?php wp_link_pages('<p class="pages"><strong>'.__('Pages:').'</strong> ', '</p>', 'number'); ?>
 
-                    
+
 
                       <div class="alignleft">
 
-					  <?php if (is_attachment()){ previous_image_link( false, '&#171; '.__('Previous Image' , 'theron').'' ); } else { previous_post_link( '%link', __( '<span class="meta-nav">&larr;</span> Précédent', 'theron' ) ); } ?> 
+					  <?php if (is_attachment()){ previous_image_link( false, '&#171; '.__('Previous Image' , 'theron').'' ); } else { previous_post_link( '%link', __( '<span class="meta-nav">&larr;</span> Précédent', 'theron' ) ); } ?>
 
                       </div>
 
@@ -249,29 +249,29 @@ echo $valueprix
 
                     </div>
 
-                    
 
-                    
 
-          
-                    
+
+
+
+
 
                 </div>
 
-                
 
 
-                
+
+
 
                         </div>
 
-                        
 
-            <?php endwhile ?> 
 
-            
+            <?php endwhile ?>
 
-                </div>   
+
+
+                </div>
 
 				<div class="comments_template"><?php comments_template('',true); ?></div>
 
@@ -283,11 +283,11 @@ echo $valueprix
 
 
 
-    
+
 
     <!--POST END-->
 
-    
+
 
 <?php if(of_get_option('nosidebar_checkbox') == "0"){ ?><?php get_sidebar();?><?php } ?>
 

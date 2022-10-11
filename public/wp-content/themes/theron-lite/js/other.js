@@ -1,7 +1,7 @@
 /**
 * hoverIntent r5 // 2007.03.27 // jQuery 1.1.2
-* <http://cherne.net/brian/resources/jquery.hoverIntent.html>
-* 
+* <https://cherne.net/brian/resources/jquery.hoverIntent.html>
+*
 * @param  f  onMouseOver function || An object with configuration options
 * @param  g  onMouseOut function  || Nothing (use configuration options object)
 * @return    The object (aka "this") that called hoverIntent, and the event object
@@ -18,7 +18,7 @@
 // Improvements by Leonardo C. Daronco (daronco)
 // Created: 2/14/2011
 // Date: 2/12/2012
-// Website: http://labs.anthonygarand.com/sticky
+// Website: https://labs.anthonygarand.com/sticky
 // Description: Makes an element on the page stick on the screen as you scroll
 //              It will only set the 'top' and 'position' of your element, you
 //              might need to adjust the width in some cases.
@@ -125,7 +125,7 @@
 })(jQuery);
 
 
-/*! http://tinynav.viljamis.com v1.03 by @viljamis */
+/*! https://tinynav.viljamis.com v1.03 by @viljamis */
 (function(a,i,g){a.fn.tinyNav=function(j){var c=a.extend({active:"selected",header:!1},j);return this.each(function(){g++;var h=a(this),d="tinynav"+g,e=".l_"+d,b=a("<select/>").addClass("tinynav "+d);if(h.is("ul,ol")){c.header&&b.append(a("<option/>").text("Navigation"));var f="";h.addClass("l_"+d).find("a").each(function(){f+='<option value="'+a(this).attr("href")+'">'+a(this).text()+"</option>"});b.append(f);c.header||b.find(":eq("+a(e+" li").index(a(e+" li."+c.active))+")").attr("selected",!0);
 b.change(function(){i.location.href=a(this).val()});a(e).after(b)}})}})(jQuery,this,0);
 
@@ -136,7 +136,7 @@ b.change(function(){i.location.href=a(this).val()});a(e).after(b)}})}})(jQuery,t
  * Copyright (c) 2012 Matt Banks
  * Dual licensed under the MIT and GPL licenses.
  * Uses the same license as jQuery, see:
- * http://docs.jquery.com/License
+ * https://docs.jquery.com/License
  *
  * @version 1.3
  */
