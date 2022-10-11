@@ -1,0 +1,16 @@
+name: empreinte-nature
+recipe: wordpress
+config:
+  webroot: public
+  database: mysql
+
+proxy:
+  pma:
+    - pma.empreinte-nature.lndo.site
+
+services:
+  pma:
+    type: phpmyadmin
+    hosts: database
+  database:
+    portforward: true
