@@ -1,0 +1,122 @@
+//
+// Default styling of html elements.
+//
+
+*, *:before, *:after {
+  // Universal transitions
+  transition-property:
+    background-color,
+    border-color,
+    box-shadow,
+    color,
+    opacity,
+    text-shadow,
+    transform;
+  transition-duration: .2s;
+  // transition-timing-function: $ease-in-cubic;
+  box-sizing: inherit;
+}
+
+// :root {
+//   font-size: 20px;
+//   line-height: 1.5;
+// }
+
+html {
+  box-sizing: border-box;
+  // Affect global rem unit calculation
+  font-size: $px-base-font-size-mobile;
+  line-height: $base-line-height;
+
+  @include mappy-query(b-small) {
+    font-size: $px-base-font-size;
+  }
+}
+
+body {
+  // @include font-feature-settings("kern", "liga", "pnum");
+  // @include prefixer(font-smoothing, antialiased, webkit);
+  background-color: $body-color;
+  color: $primary-text-color;
+  font-family: $base-font-family;
+  -webkit-tap-highlight-color: transparent;
+}
+
+// Headings
+//
+
+%hN {
+  color: $heading-text-color;
+  font-family: $header-font-family;
+  line-height: $heading-line-height;
+  font-weight: 500;
+  text-rendering: optimizeLegibility;
+}
+
+h1 {
+  @extend %hN;
+  font-size: $font-size-xxl;
+  margin: rhythm(1, $font-size-xxl, $heading-line-height) 0 rhythm(math.div(1, 2), $font-size-xxl, $heading-line-height);
+}
+
+h2 {
+  @extend %hN;
+  font-size: $font-size-xl;
+  margin: rhythm(1, $font-size-xl, $heading-line-height) 0 rhythm(math.div(1, 2), $font-size-xl, $heading-line-height);
+}
+
+h3 {
+  @extend %hN;
+  font-size: $font-size-lg;
+  margin: rhythm(1, $font-size-lg, $heading-line-height) 0 rhythm(math.div(1, 2), $font-size-lg, $heading-line-height);
+}
+
+h4 {
+  @extend %hN;
+  font-size: $font-size-normal;
+  line-height: $heading-line-height;
+  margin: rhythm(1, $font-size-normal, $heading-line-height) 0 rhythm(math.div(1, 2), $font-size-normal, $heading-line-height);
+}
+
+h5 {
+  @extend %hN;
+  font-size: $font-size-md;
+  margin: rhythm(1, $font-size-md, $heading-line-height) 0 rhythm(math.div(1, 2), $font-size-md, $heading-line-height);
+}
+
+h6 {
+  @extend %hN;
+  font-size: $font-size-sm;
+  margin: rhythm(1, $font-size-sm, $heading-line-height) 0 rhythm(math.div(1, 2), $font-size-sm, $heading-line-height);
+}
+
+ul {
+  margin: 0 0 rhythm(1);
+  padding: 0 0 0 rem(20);
+
+  ol,
+  ul {
+    margin: 0;
+  }
+}
+
+img,
+picture {
+  max-width: 100%;
+  height: auto;
+}
+
+figure {
+  margin: 0;
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+
+  &:focus,
+  &:hover{
+    color: $link-color;
+    text-decoration: underline;
+  }
+}

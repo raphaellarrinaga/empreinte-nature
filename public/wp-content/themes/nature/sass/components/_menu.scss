@@ -1,0 +1,12 @@
+// Menu
+.menu-collections-container {}
+
+.menu {
+  display: flex;
+  flex-flow: row nowrap;
+  list-style: none;
+}
+
+.sub-menu {
+  border: 1px solid #cacaca;
+}

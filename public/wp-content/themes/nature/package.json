@@ -1,0 +1,33 @@
+{
+  "name": "nature",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-combine-mq": "^0.4.0",
+    "gulp-livereload": "^4.0.2",
+    "gulp-notify": "^4.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-sass-glob": "^1.1.0",
+    "sass": "^1.55.0"
+  },
+  "overrides": {
+    "graceful-fs": "^4.2.10"
+  },
+  "browserslist": [
+    "last 2 version",
+    "> 1%",
+    "maintained node versions",
+    "not dead"
+  ],
+  "dependencies": {
+    "mappy-breakpoints": "^0.2.4"
+  }
+}

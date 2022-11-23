@@ -1,0 +1,112 @@
+// Frontpage
+
+.front-intro {
+  margin: rhythm(3) 0 rhythm(5);
+}
+
+.front-intro__inner {
+  @include mappy-bp(medium) {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+}
+
+.front-intro__text {
+  font-size: $font-size-lg;
+  font-weight: 500;
+  margin: 0;
+
+  @include mappy-bp(medium) {
+    flex: 1;
+  }
+}
+
+.front-intro__nav {
+  @include mappy-bp(medium) {
+    flex: 1;
+    text-align: right;
+
+    .menu {
+      justify-content: flex-end;
+    }
+  }
+}
+
+// Services
+
+.front-services__inner {
+  @include mappy-bp(medium) {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+}
+
+// Impact
+
+.front-impact {
+  margin-bottom: rhythm(6);
+  margin-top: rhythm(6);
+}
+
+.front-impact__title {
+  text-transform: uppercase;
+  font-size: $font-size-md;
+  font-weight: normal;
+}
+
+.front-impact__cols {
+  @include mappy-bp(medium) {
+    display: flex;
+    flex-flow: row nowrap;
+
+    > * {
+      flex: 1;
+    }
+  }
+
+  figure {
+    margin-bottom: rhythm(1);
+  }
+}
+
+.front-impact__subtitle {
+  strong {
+    color: $brand-tertiary;
+    font-weight: 500;
+  }
+}
+
+// Values
+
+.front-values {
+  margin-bottom: rhythm(6);
+  margin-top: rhythm(6);
+}
+
+.front-values__title {
+  text-transform: uppercase;
+  font-size: $font-size-md;
+  font-weight: normal;
+}
+
+.front-values__cols {
+  @include mappy-bp(medium) {
+    display: flex;
+    flex-flow: row nowrap;
+
+    > * {
+      flex: 1;
+    }
+  }
+
+  figure {
+    margin-bottom: rhythm(1);
+  }
+}
+
+.front-value__subtitle {
+  strong {
+    color: $brand-quaternary;
+    font-weight: 500;
+  }
+}

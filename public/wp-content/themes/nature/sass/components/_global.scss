@@ -1,0 +1,18 @@
+// Global
+
+.site-description {}
+
+.site-logo {
+  font-family: $brand-font-family;
+  font-weight: normal;
+  margin: 0;
+
+  a {
+    color: $primary-text-color;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+}

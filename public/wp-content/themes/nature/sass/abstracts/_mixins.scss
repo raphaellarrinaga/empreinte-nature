@@ -1,0 +1,102 @@
+//
+// Mixins
+//
+// Snippets of reusable CSS to develop faster and keep code readable
+//
+
+// Pseudo element
+// Create an empty css pseudo element. Reusable for, e.g., icons
+@mixin el($display, $width, $height) {
+  content: '';
+  display: $display;
+
+  @if $height {
+    height: $height;
+  }
+  @if $width {
+    width: $width;
+  }
+}
+
+@mixin text-hidden() {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@mixin fill() {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0
+}
+
+// Define simple button styles
+@mixin button($font-size: 1rem) {
+  appearance: none;
+  border-radius: rem(30);
+  cursor: pointer;
+  display: inline-block;
+  font-family: $button-font-family;
+  font-size: $font-size;
+  font-weight: normal;
+  line-height: 1;
+  padding: rem(7px) rem(18) rem(8px) rem(12);
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  -webkit-font-smoothing: antialiased;
+
+  &:active {
+    transform: translateY(1px);
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+}
+
+@mixin button--default($font-size: 1rem) {
+  @include button($font-size);
+  background-color: $button-bg-color;
+  border: none;
+  color: $button-text-color;
+
+  &:visited {
+    color: $button-text-color;
+  }
+
+  &:hover {
+    background-color: darken($button-bg-color, 8%);
+    color: $button-text-color;
+    text-decoration: none;
+  }
+
+  &:focus{
+    box-shadow: inset $link-color 0 0 0 2px;
+    color: $button-text-color;
+    text-decoration: none;
+    outline: 0;
+  }
+}
+
+@mixin button--primary($font-size: $font-size-md) {
+  background-color: $button-prim-bg-color;
+  border: 2px solid darken($button-prim-bg-color, 8%);
+  color: $button-prim-text-color;
+
+  &:hover{
+    background-color: darken($button-prim-bg-color, 8%);
+    color: $button-prim-text-color;
+  }
+
+  &:focus {
+    box-shadow: lighten($link-color, 15%) 0 0 5px;
+    color: $button-prim-text-color;
+    outline: 0;
+  }
+}

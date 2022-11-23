@@ -1,0 +1,82 @@
+//
+// Helper classes
+//
+
+// Hide for desktop
+//
+.desktop-hidden {
+  @include mappy-query(b-medium) {
+    display: none;
+  }
+}
+
+// Hide for mobile
+//
+.mobile-hidden {
+  @include mappy-bp(max-width $b-small-val) {
+    display: none;
+  }
+}
+
+// Inline lists
+//
+.list-inline {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding-left: 0;
+
+  > li {
+    &:not(:last-child) {
+      margin-right: 1em;
+    }
+  }
+}
+
+.image-rounded {
+  border-radius: rem(3);
+  display: block;
+  line-height: 0;
+  overflow: hidden; // usefull if it is a wrapper.
+}
+
+.image-fit-content {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center center;
+  transform-origin: center center;
+}
+
+// Custom icons
+.icn {
+  display: inline-block;
+  height: rem(20);
+  vertical-align: middle;
+  width: rem(21);
+}
+
+.icn-fb {
+  background: url('assets/images/icn-fb.svg') no-repeat left top;
+}
+.icn-insta {
+  background: url('assets/images/icn-insta.svg') no-repeat left top;
+}
+.icn-li {
+  background: url('assets/images/icn-li.svg') no-repeat left top;
+}
+
+.header-more {
+  margin: rhythm(2) 0 rhythm(1);
+
+  @include mappy-bp(medium) {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  h1 {
+    margin: 0;
+  }
+}

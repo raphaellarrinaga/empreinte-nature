@@ -1,0 +1,35 @@
+// Grid
+.l-constrain {
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  @include mappy-bp(medium) {
+    padding-left: rem(60);
+    padding-right: rem(60);
+  }
+}
+
+.l-grid-constrain {
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  @include mappy-bp(big) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+// Page
+
+// .site-container {
+//   background-color: $page-color;
+// }
+
+// Global main content sections
+.site-main {
+  outline: none;
+}
+
+.site-content {}
+
+.site-aside {}

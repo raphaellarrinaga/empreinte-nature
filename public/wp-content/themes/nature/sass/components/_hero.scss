@@ -1,0 +1,81 @@
+// Hero (frontpage)
+
+.site-hero {
+  background: url('assets/images/bg-hero.jpg') no-repeat center;
+  background-size: cover;
+  min-height: 50vh;
+  padding: rhythm(2) rem(16);
+  text-align: center;
+
+  @include mappy-bp(medium) {
+    height: 100vh;
+  }
+
+  &:after {
+    @include el(block, 100%, rem(220));
+    background: linear-gradient(0deg, rgba(#111, 0), #111 75%, #111 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: .75;
+    z-index: 1;
+  }
+
+  &:before {
+    @include el(block, 1px, 100px);
+    position: absolute;
+    bottom: 2rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+    // background-color: green;
+    background: linear-gradient(to top, white 80%, white 100%) no-repeat;
+    // background-size: 0 1px;
+    background-position: 0 100%;
+    animation: down 1s linear infinite;
+  }
+}
+
+@keyframes down {
+  0% {
+    background-size: 1px 100%;
+  }
+  100% {
+    background-size: 1px 0;
+  }
+}
+
+.scrolldown-link {
+  background-color: $link-color;
+  color: $white;
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  // right: 0;
+  bottom: 10rem;
+  width: auto;
+  z-index: 2;
+  transform: translateX(-50%);
+}
+
+.site-hero__branding {
+  @include text-hidden;
+  background: url('assets/images/logo-hero.svg') no-repeat center;
+  background-size: contain;
+  display: inline-block;
+  height: rem(100);
+  width: 100%;
+  position: relative;
+  z-index: 2;
+
+  @include mappy-bp(small) {
+    height: 118px;
+    width: 312px;
+  }
+
+  a {
+    @include fill;
+  }
+}
